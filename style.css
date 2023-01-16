@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+  }
+.nav-container {
+    max-width: 1310px;
+    padding: 2% 1%;
+    background-color: #faece9;
+    border-bottom: 1px solid #ffd3ca;
+}
+.logo {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+  }
+.logo_header {
+    display: flex;
+  }
+.main_nav {
+    display: flex;
+    width: 50%;
+    float: right;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .main_nav li span:hover{
+    border-bottom: 2px solid #ff5500;
+  }
+  
+  .main_nav li{
+    display: inline;
+    color: #000;
+  }
+  .main_nav li a{
+    color: #000;
+  }
+  .navbar_toggle {
+    display: none;
+    }
+.banner-container {
+    padding: 5% 1%;
+    background-color: #faece9;
+    max-width: 1310px;
+}
+.banner-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner-col-1{
+    width: 60%;
+}
+.banner-col-2 {
+    width: 40%;
+}
+.banner-text {
+    max-width: 500px;
+}
+.banner-text h1 {
+    font-size: 3rem;
+    margin: 5% 0;
+}
+.banner-text p {
+    font-size: 1.5rem;
+    margin: 5% 0;
+}
+.banner-text a {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2% 0;
+    color: #fff;
+    background-color: #ff5500;
+    padding: 3% 5%;
+    border-radius: 5px;
+}
+.banner-text a:hover {
+    color: #ff5500;
+    background-color: #fff;
+    padding: 3% 5%;
+    border: 1px solid #ff5500;
+}
+.banner-image {
+    width: 500px;
+    height: 500px;
+    background-color: #ff5500;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+}
+.banner-image img {
+    width: 80%;
+    height: auto;
+}
+.container-white {
+    padding: 5% 1%;
+    background-color: #fff;
+    max-width: 1310px;
+}
+.feature-sec-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.feature-row {
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card {
+    margin: 0 1%;
+    padding: 3% 1%;
+    text-align: center;
+    border: 1px solid #d6bda5;
+    border-radius: 5px;
+}
+.card:hover {
+    color: white;
+    background-color: #ff5500;
+    cursor: pointer;
+}
+.card h3, .card p {
+    margin: 2% auto;
+}
+.f-icon {
+    display: block;
+    /* color: #ff5500; */
+    font-size: 30px;
+    background: transparent;
+    border-color: transparent;
+    margin: 2% auto;
+}
+.about-row {
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about-col{
+    width: 50%;
+}
+/* .about-text {
+    max-width: 500px;
+} */
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 5% 0;
+}
+.about-text span {
+    font-size: 3rem;
+}
+.about-text h3 {
+    font-weight: 700;
+    margin: 5% 0;
+}
+.about-text p {
+    font-size: 1.5rem;
+    margin: 5% 0;
+}
+.about-text a {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2% 0;
+    color: #fff;
+    background-color: #ff5500;
+    padding: 3% 5%;
+    border-radius: 5px;
+}
+.about-text a:hover {
+    color: #ff5500;
+    background-color: #fff;
+    padding: 3% 5%;
+    border: 1px solid #ff5500;
+}
+.about-image {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient( -90deg, #ff5500 50%, #fff0 50% );
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.about-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+/* FAQ CSS */
+.accordion {
+    padding: 5% 20%;
+}
+/* .accordion .accordion-item {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 2% 0;
+  } */
+  
+  .accordion .accordion-item button[aria-expanded='true'] {
+    border: 1px solid #ff5500;
+  }
+  
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em;
+    color: #000;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 1% 0;
+  }
+  
+  .accordion button:hover {
+    cursor: pointer;
+    color: #ff5500;
+    border: 1px solid #ff5500;
+  }
+  
+  .accordion button:hover::after {
+    cursor: pointer;
+    color: #ff5500;
+    border: 1px solid #ff5500;
+  }
+  
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  
+  .accordion button[aria-expanded='true'] {
+    color: #ff5500;
+  }
+ 
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    margin: 1em;
+  }
+  .footer-container {
+    padding: 5%;
+    background-color: #000000d6;
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+  }
+  .footer-col h2 {
+    color: #fff;
+    padding-bottom: 15px;
+  }
+  .footer-col ul li {
+    list-style: none;
+    padding: 10px 0;
+  }
+  .footer-col ul li a {
+    color: #c1bcbc;
+    font-size: 1rem;
+  }
+  .footer-col ul li a:hover {
+    color: #fff;
+  }
+  .copyright {
+    border-top: 1px solid #c1bcbc;
+    padding-top: 20px;
+  }
+  .copyright p {
+    color: #c1bcbc;
+    text-align: center;
+  }
+ 
+
+
+
+/* Media Queries for responsive design */
+@media only screen and (max-width : 992px) {
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #faece9;
+    font-size: 20px;
+}
+.nav-container {
+    padding: 2% 5%;
+}
+
+.main_nav{
+    display: none;
+}
+
+.show_nav{
+    padding-top: 10%;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main_nav li{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+.navbar_toggle {
+    font-size: 30px;
+    color: #ff5500;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+}
+.logo_header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+
+}
+@media only screen and (max-width : 767px) {
+    .banner-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .banner-col-1, .banner-col-2 {
+        width: 100%;
+    }
+    .banner-text {
+        text-align: center;
+        margin: 0 10%;
+    }
+    .banner-text a {
+        padding: 5% 10%;
+    }
+    .banner-image {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        margin: 10% auto;
+    }
+    .feature-sec-heading h2 {
+        padding: 5%;
+    }
+    .feature-row {
+        flex-direction: column;
+        margin: 5% auto;
+    }
+    .card {
+        padding: 5%;
+        margin: 5%;
+    }
+    .about-row {
+        flex-direction: column;
+        margin: 5% auto;
+    }
+    .about-col {
+        width: 100%;
+        margin: 5% auto;
+    }
+    .about-text {
+        text-align: center;
+        padding: 0 10%;
+    }
+    .about-image {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .accordion {
+        padding: 5%;
+    }
+    .accordion button {
+        margin: 2% 0;
+    }
+    .footer-row {
+        flex-direction: column;
+        margin: 5% auto;
+    }
+    .footer-col {
+        text-align: center;
+        margin: 5%;
+    }
+}
